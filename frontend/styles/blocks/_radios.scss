@@ -1,0 +1,6 @@
+@use '../config' as *;
+
+.radios {
+    display: flex;
+    column-gap: 35px;
+}

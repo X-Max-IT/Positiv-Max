@@ -1,0 +1,51 @@
+@use '../config' as *;
+
+.subscription {
+    background-color: var(--color-dark-alt);
+    padding: 58px 40px;
+    border-radius: var(--border-radius);
+
+    @include mobile {
+        width: 100%;
+        padding: 30px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+    &__input {
+        outline: none;
+        height: var(--button-height);
+        padding-inline: 35px;
+        border-radius: var(--border-radius);
+        background-color: var(--color-dark-alt);
+        color: var(--color-light);
+        border: var(--border-light);
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: var(--color-light);
+        }
+
+        &:focus {
+            border-color: var(--color-accent);
+            outline: none;
+        }
+    }
+
+    &__button {
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+}

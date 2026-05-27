@@ -1,0 +1,9 @@
+@use '../config' as *;
+
+.soc1al {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

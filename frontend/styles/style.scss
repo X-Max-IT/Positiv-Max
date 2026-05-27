@@ -1,0 +1,37 @@
+// 1. Сбросы и шрифты
+@use 'normalize';
+@use 'fonts';
+
+// 2. Переменные и миксины
+@use 'config' as *;
+
+// 3. Базовые стили
+@use 'globals';
+@use 'utils';
+
+@use 'blocks/button';
+@use 'blocks/grid';
+@use 'blocks/burger-button';
+@use 'blocks/header';
+@use 'blocks/cross-button';
+@use 'blocks/mobile-overlay';
+@use 'blocks/sections';
+@use 'blocks/hero';
+@use 'blocks/banner';
+@use 'blocks/puddle-bg';
+@use 'blocks/services';
+@use 'blocks/service-card';
+@use 'blocks/studies';
+@use 'blocks/process';
+@use 'blocks/team';
+@use 'blocks/team-card';
+@use 'blocks/reviews';
+@use 'blocks/pagination';
+@use 'blocks/review-card';
+@use 'blocks/radio';
+@use 'blocks/radios';
+@use 'blocks/field';
+@use 'blocks/contact-us';
+@use 'blocks/footer';
+@use 'blocks/social';
+@use 'blocks/subscription';

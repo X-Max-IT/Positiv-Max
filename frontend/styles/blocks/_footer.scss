@@ -1,0 +1,160 @@
+@use '../config' as *;
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+    padding: clamp(30px, 5vw, 60px);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 66px;
+
+        @include tablet {
+            gap: 35px;
+        }
+        @include mobile {
+            gap: 40px;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        gap: clamp(40px, 4vw, 100px);
+        align-items: center;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__logo {
+        @include tablet {
+            max-width: 120px;
+        }
+
+        @include mobile {
+            max-width: 140px;
+        }
+    }
+
+    &__menu {
+        font-size: 20px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            @include tablet {
+                column-gap: 15px;
+            }
+            @include mobile {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: 48px;
+            
+            @include fluid-text(20, 16);
+
+            @include mobile {
+                height: auto;
+            }
+
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: var(--color-light);
+                transition: inherit;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+
+        @include mobile {
+            align-items: center;
+            text-align: center;
+        }
+
+        &-title {
+            color: var(--color-dark);
+            max-width: 126px;
+
+            @include mobile {
+                max-width: none;
+            }
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include mobile {
+                gap: 15px;
+            }
+        }
+    }
+
+    &__extra {
+        padding-top: 66px;
+        border-top: var(--border-light);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+
+        @include tablet {
+            padding-top: 40px;
+            gap: 30px;
+        }
+        @include mobile {
+            flex-direction: column;
+            padding-top: 40px;
+            gap: 20px;
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            height: 22px;
+            border-bottom: var(--border-light);
+        }
+    }
+}
