@@ -9,7 +9,7 @@
 - **CSS-анимации** - бургер-меню, ховер-эффекты, плавные transitions
 - Самостоятельная разработка блока Footer
 
-Макет в Figma: [https://www.figma.com/design/racHPrMNd7jO0XgXQPpE7w/Positivus-Landing-Page-Design--Community-?node-id=25-145&t=QCczIHXnrqGlBcW0-1]
-Обучающее видео: [https://www.youtube.com/watch?v=ae_ijNJ38zM&t=6237s] - Александр Ламков.
+- Макет в Figma: [https://www.figma.com/design/racHPrMNd7jO0XgXQPpE7w/Positivus-Landing-Page-Design--Community-?node-id=25-145&t=QCczIHXnrqGlBcW0-1]
+- Обучающее видео: [https://www.youtube.com/watch?v=ae_ijNJ38zM&t=6237s] - Александр Ламков
 
 *Проект создан в образовательных целях.*
